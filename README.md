@@ -3,21 +3,28 @@
 ```:フォルダ構成
 📁my_zmk_firmware
  ├─ 📄build.yaml
- ├─ 📁.github ─ 📁workflows ─ 📄build.yml
+ ├─ 📁.github
+ │   └─ 📁workflows
+ │       └─ 📄build.yml
+ ├─ 📁src
+ │   ├─ 📄widget.yml
+ │   └─ 📁behavior
+ │       └─ 📄shields
  └─ 📁config
      ├─ 📄west.yml
-     └─ 📁boards ─ 📁shields
-                    ├─ 📁settings_reset
-                    └─ 📁asym_ble
-                        ├─ 📄Kconfig.defconfig
-                        ├─ 📄Kconfig.shield
-                        ├─ 📄asym_ble.conf
-                        ├─ 📄asym_ble.dtsi
-                        ├─ 📄asym_ble.keymap
-                        ├─ 📄asym_ble.zmk.yml
-                        ├─ 📄asym_ble_left.overlay
-                        └─ 📄asym_ble_right.overlay
-                        
+     └─ 📁boards
+         └─ 📁shields
+             ├─ 📁settings_reset
+             └─ 📁asym_ble
+                 ├─ 📄Kconfig.defconfig
+                 ├─ 📄Kconfig.shield
+                 ├─ 📄asym_ble.conf
+                 ├─ 📄asym_ble.dtsi
+                 ├─ 📄asym_ble.keymap
+                 ├─ 📄asym_ble.zmk.yml
+                 ├─ 📄asym_ble_left.overlay
+                 └─ 📄asym_ble_right.overlay
+                       
 ```
 
 ## キーボードレイアウト
