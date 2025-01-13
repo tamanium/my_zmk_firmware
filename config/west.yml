@@ -2,10 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: caksoylar  # <-- 20250113 added
+      url-base: https://github.com/caksoylar  # <-- 20250113 added
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-rgbled-widget  # <-- 20250113 added
+      remote: caksoylar  # <-- 20250113 added
+      revision: main  # <-- 20250113 added
   self:
     path: config
