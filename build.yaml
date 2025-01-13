@@ -1,6 +1,6 @@
 
 board: [seeeduino_xiao_ble]
-shield: [asym_ble_left, asym_ble_right,settings_reset, hummingbird rgbled_adapter]
+shield: [asym_ble_left, asym_ble_right,settings_reset, rgbled_adapter]
 
 # include:
 #   - board: seeeduino_xiao_ble
