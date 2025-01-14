@@ -6,10 +6,6 @@
  ├─ 📁.github
  │   └─ 📁workflows
  │       └─ 📄build.yml
- ├─ 📁src
- │   ├─ 📄widget.yml
- │   └─ 📁behavior
- │       └─ 📄shields
  └─ 📁config
      ├─ 📄west.yml
      └─ 📁boards
@@ -74,18 +70,8 @@ Layer 2
 ```yaml
 #マイコンボード名
 board: [seeeduino_xiao_ble]
-#シールド名 カンマ区切り
-shield: [asym_ble_left, asym_ble_right, settings_reset] 
-```
-こっちの入力方法でもOK
-```yaml
-include:
-  - board: seeeduino_xiao_ble #マイコンボード名
-    shield: asym_ble_left     #シールド名
-  - board: seeeduino_xiao_ble
-    shield: asym_ble_right
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
+#シールド名+半角スペース+モジュール名 カンマ区切り
+shield: [asym_ble_left rgbled_adapter, asym_ble_right rgbled_adapter, settings_reset] 
 ```
 
 ### 📄build.yml
